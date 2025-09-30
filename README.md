@@ -1,12 +1,15 @@
-# SYNAPTICON: Brain Waves-to-Natural Language-to-Aesthetics
+# SYNAPTICON: Closed-Loop AI Multimodal Generation from Brain Signals: A BCI Framework Integrating EEG Decoding with LLMs and Transformers.
 
 # <img src="./images/SYNAPTiCON_AlbertDATA_1.JPG" alt="SYNAPTICON Live Performance AlbertDATA" width="600"/>
 
 > **ABSTRACT**
 > 
 > SYNAPTICON is a radical experimentation that merges neuro-hacking, brain-computer interfaces (BCI), and foundational models to explore new realms of human expression, aesthetics and surveillance. SYNAPTICON's innovative framework envisions a new era of the “Panopticon”, where cognitive and algorithmic systems converge, authorizing real-time monitoring, modulation, and prediction of thought, behavior, and creativity. Through the use of BCIs and SOTA AI-driven cognitive models and architectures, SYNAPTICON blurs the boundaries between the self and surveillance, offering profound insights into the neural and algorithmic fabric of perception within human existence. By developing a real-time“Brain Waves-to-Natural Language-to-Aesthetics” system, SYNAPTICON first translates neural states into decoded speech and then into powerful audiovisual expressions for altered perception. This visionary project proposes a new genre of performance art that invites audiences to directly engage with Albert.DATA’s mind, while prompting critical dialogue on the future of neuro-rights and synthetic identities.
-> 
-> **AUDIOVISUAL DOCUMENTATION** 
+>
+> **NeurIPS 2025 PAPER:**
+> + Barque-Duran, A., Llauradó, A; (2025) **How Foundation Models Are Reshaping Non-Invasive Brain–Computer Interfaces: A Case for Novel Human Expression.** 39th Annual Conference on Neural Information Processing Systems - NeurIPS 2025.
+>
+> **AUDIOVISUAL DOCUMENTATION:**
 > + Info: https://albert-data.com/pages/synapticon
 
 ---
