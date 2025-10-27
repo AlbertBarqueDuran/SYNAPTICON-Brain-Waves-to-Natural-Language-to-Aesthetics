@@ -1,25 +1,28 @@
 # SYNAPTICON: Closed-Loop AI Multimodal Generation from Brain Signals: A BCI Framework Integrating EEG Decoding with LLMs and Transformers.
 
-# <img src="./images/SYNAPTiCON_AlbertDATA_1.JPG" alt="SYNAPTICON Live Performance AlbertDATA" width="600"/>
+# <img src="./images/SYNAPTICON_Cartography.png" alt="SYNAPTICON Cartography AlbertDATA" width="900"/>
 
 > **ABSTRACT**
 > 
-> SYNAPTICON is a radical experimentation that merges neuro-hacking, brain-computer interfaces (BCI), and foundational models to explore new realms of human expression, aesthetics and surveillance. SYNAPTICON's innovative framework envisions a new era of the “Panopticon”, where cognitive and algorithmic systems converge, authorizing real-time monitoring, modulation, and prediction of thought, behavior, and creativity. Through the use of BCIs and SOTA AI-driven cognitive models and architectures, SYNAPTICON blurs the boundaries between the self and surveillance, offering profound insights into the neural and algorithmic fabric of perception within human existence. By developing a real-time“Brain Waves-to-Natural Language-to-Aesthetics” system, SYNAPTICON first translates neural states into decoded speech and then into powerful audiovisual expressions for altered perception. This visionary project proposes a new genre of performance art that invites audiences to directly engage with Albert.DATA’s mind, while prompting critical dialogue on the future of neuro-rights and synthetic identities.
+> SYNAPTICON} is a research prototype at the intersection of neuro-hacking, non-invasive brain-computer interfaces (BCIs), and foundational models, probing new territories of human expression, aesthetics, and AI alignment. Envisioning a cognitive “Panopticon” where biological and synthetic intelligent systems converge, it enables a pipeline that couples temporal neural dynamics with pretrained language representations and operationalizes them in a closed loop for performance. At its core lies a live “Brain Waves-to-Natural Language-to-Aesthetics” system that translates neural states into decoded speech, and then into immersive audiovisual output, shaping altered perceptual experiences and inviting audiences to directly engage with the user’s mind. SYNAPTICON provides a reproducible reference for foundation-model-assisted BCIs, suitable for studies of speech decoding, neuroaesthetics, and human–AI co-creation.
 >
 > **NeurIPS 2025 PAPER:**
-> + Barque-Duran, A., Llauradó, A; (2025) **How Foundation Models Are Reshaping Non-Invasive Brain–Computer Interfaces: A Case for Novel Human Expression.** 39th Annual Conference on Neural Information Processing Systems - NeurIPS 2025.
+> + Barque-Duran, A., Llauradó, A; (2025) **How Foundation Models Are Reshaping Non-Invasive Brain–Computer Interfaces: A Case for Novel Human Expression and Alignment.** 39th Annual Conference on Neural Information Processing Systems - NeurIPS 2025.
 >
 > **AUDIOVISUAL DOCUMENTATION:**
 > + Info: https://albert-data.com/pages/synapticon
+> # <img src="./images/SYNAPTICON_Performance.png" alt="SYNAPTICON Performance AlbertDATA" width="800"/>
 
 ---
 
-## 1) Overview
+## 1) Overview (this open-source repository contains a computationally lighter encoder for experimentation or deployment (vs. the model presented in the original author's paper))
 
-**What this system does:**  
-SYNAPTICON is a research prototype exploring closed-loop brain–computer interaction through language. The system combines real-time EEG acquisition, signal preprocessing, and deep learning models to investigate how neural activity can be mapped onto natural language representations.
-
-The workflow consists of four main stages:
+**What the original-system does:**  
+Using a 16-channel OpenBCI headset, signals are filtered and baseline-aligned, then compressed by a bi-LSTM and injected into BART-base, which autocompletes text directly from neural dynamics. A 5 s streaming window keeps the decoder live, so thoughts during reading (or imagined speech) become words that orchestrate audiovisual scenes on stage. Instead of bespoke decoders, SYNAPTICON aligns EEG with a foundation model’s language space, dramatically boosting expressivity and enabling continuous, open-vocabulary interaction. The system functions as both research apparatus and performance instrument, demonstrating how neuro-LLMs can externalize inner cognition and reshape human–AI co-creativity.
+# <img src="./images/Figure2_NeurIPS.png" alt="Figure2 NeurIPS Paper" width="600"/>
+# <img src="./images/Figure3_NeurIPS.png" alt="Figure3 NeurIPS Paper" width="600"/>
+**What this lite-system does:**  
+The system combines real-time EEG acquisition, signal preprocessing, and deep learning models to investigate how neural activity can be mapped onto natural language representations. The workflow consists of four main stages:
 
 - **Stimulus presentation & EEG recording**: Participants are shown sentences full-screen in a timed sequence while EEG data is collected in parallel. Each trial produces a labeled 10-second neural recording window aligned with the presented text.
 - **Data preprocessing**: Raw EEG streams are filtered (notch + band-pass), padded or truncated to a consistent length, and packaged into compressed .npz tensors. This ensures clean, uniform input for model training.
@@ -126,10 +129,11 @@ python scripts/inference_live.py   --model models/best_eeg2text_epochXX.pt   --s
 ---
 
 ## 7) Credits
-- **Directed & Produced**: Albert.DATA (Albert Barqué-Duran).
+- **Directed, Produced & Developed**: Albert Barqué-Duran (Albert.DATA).
 - **Technical Managers**: Ada Llauradó & Ton Cortiella.
-- **Audio Engineer**: Jesús Vaquerizo / I AM JAS.
+- **Audio Engineer**: Jesús Vaquerizo (I AM JAS).
 - **Extra Performer**: Teo Rufini.
 - **Partners**: Sónar+D; OpenBCI; BSC (Barcelona Supercomputing Center); .NewArt { foundation;}; CBC (Center for Brain & Cognition); Universitat Pompeu Fabra; Departament de Cultura - Generalitat de Catalunya.
+# <img src="./images/SYNAPTICON_Partners.png" alt="SYNAPTICON Partners AlbertDATA" width="900"/>
 
 
